@@ -1,0 +1,28 @@
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"),
+   url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+   url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+   url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+   url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "OpenSans";
+   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+   url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+   url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+}

@@ -3,10 +3,68 @@
 @import 'mixins';
 @import 'global';
 
-//* squared block
+//* start header
 
+.header-up {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   
+   &__logo {
+      margin-top: 42px;
+      .logo-img {
+         display: block;
+         margin-bottom: 7px;
+      }
 
-//* squared block
+      .logo-slogan {
+         color: #9B9B9B;
+      }
+   }
+   
+}
+
+.contact-box {
+   padding-top: 21px;
+   &__link + &__link {
+      margin-left: 43px;
+   }
+
+   &__link {
+      color: #9B9B9B;
+   }
+
+   &__login {
+      position: relative;
+      padding: 6px 16px 6px 36px;
+      background: #F9F9F9;
+      border: 1px solid #D2CECE;
+      border-radius: 2px;
+
+      &::before {
+         position: absolute;
+         content: '';
+         top: 7px;
+         left: 15px;
+         width: 10px;
+         height: 9px;
+         background-image: url('../images/header-logo-btn/btn.svg');
+      }
+
+      &::after {
+         position: absolute;
+         content: '';
+         top: 17px;
+         left: 15px;
+         width: 10px;
+         height: 5px;
+         background-image: url('../images/header-logo-btn/btn-1.svg');
+      }
+   }
+}
+
+//* end header
 
 // .selector-item {
 //    /* Позиционирование */

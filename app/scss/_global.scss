@@ -15,8 +15,16 @@ a{
 
 body {
    font-family: "HelveticaNeueCyr", "Verdana", sans-serif;
+   font-size: 14px;
 }
 .container {
-   
+   max-width: 1935px;
+   padding: 0px 15px;
+   margin: 0 auto;
+}
+
+.inner {
+   max-width: 1530px;
+   margin: 0 auto;
 }
 

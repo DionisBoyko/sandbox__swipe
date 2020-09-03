@@ -5,64 +5,78 @@
 
 //* start header
 
-.header-up {
+.header {
+
    &__inner {
+      height: 120px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #00A9FF;
    }
-   
-   &__logo {
-      margin-top: 42px;
-      .logo-img {
-         display: block;
-         margin-bottom: 7px;
-      }
 
-      .logo-slogan {
-         color: #9B9B9B;
-      }
+   &__logo-img {
+      display: block;
+      padding-bottom: 7px;
    }
-   
+
+   &__logo-slogan {
+      font-weight: 300;
+      font-size: 10px;
+      color: #9B9B9B;
+   }
+
+}
+
+.link-inner {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
 }
 
 .contact-box {
-   padding-top: 21px;
+   margin-bottom: 35px;
    &__link + &__link {
-      margin-left: 43px;
+      margin-left: 40px;
    }
 
    &__link {
       color: #9B9B9B;
-   }
-
-   &__login {
-      position: relative;
-      padding: 6px 16px 6px 36px;
-      background: #F9F9F9;
-      border: 1px solid #D2CECE;
-      border-radius: 2px;
-
-      &::before {
-         position: absolute;
-         content: '';
-         top: 7px;
-         left: 15px;
-         width: 10px;
-         height: 9px;
-         background-image: url('../images/header-logo-btn/btn.svg');
-      }
-
-      &::after {
-         position: absolute;
-         content: '';
-         top: 17px;
-         left: 15px;
-         width: 10px;
-         height: 5px;
-         background-image: url('../images/header-logo-btn/btn-1.svg');
+      transition: 0.3s;
+      &:hover {
+         color: #00A9FF;
       }
    }
 }
+
+.nav {
+   transition: 0.3s;
+   margin-bottom: 31px;
+   &__list + &__list {
+      margin-left: 108px;
+   }
+
+   &__list {
+      display: inline;
+      text-transform: uppercase;
+   }
+
+   &__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #00A9FF;
+      transition: 0.3s;
+      &:hover {
+         color: #9B9B9B;
+      }
+   }
+
+   &__link--active {
+      color: #9B9B9B;
+   }
+}
+
 
 //* end header
 
